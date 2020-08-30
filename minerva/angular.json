@@ -119,10 +119,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "minerva",
-  "cli": {
-    "analytics": "e934b381-33f2-4436-af13-1cb02a8e82e9"
-  }
+    }},
+  "defaultProject": "minerva"
 }
