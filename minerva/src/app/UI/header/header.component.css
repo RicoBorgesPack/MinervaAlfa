@@ -56,7 +56,6 @@ header {
     }
         .header-menu li {
             position: relative;
-            -webkit-transform: translateZ(0); /** To avoid a flash when hover messages **/
         }
             .header-menu-tab {
                 padding: 0 27px;
