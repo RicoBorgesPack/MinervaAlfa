@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "minerva"
+    }
+  },
+  "defaultProject": "minerva",
+  "cli": {
+    "analytics": false
+  }
 }
