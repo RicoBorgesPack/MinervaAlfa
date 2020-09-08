@@ -1,19 +1,15 @@
 
 #page-landing {
-    background: var(--color-primary);
+    background: #3c1053;;
   }
   
   #container {
-    color: var(--color-text-in-primary);
-  }
-  
-  .logo-container img {
-    height: 10rem;
+    background: #D4C2FF;
   }
   
   .logo-container {
     text-align: center;
-    margin-bottom: 3.2rem;
+    margin-bottom: 10px;
   }
   
   .logo-container h2 {
@@ -38,6 +34,11 @@
   }
   
   .buttons-container a {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
+    
     width: 30rem;
     height: 10.4rem;
     border-radius: 0.8rem;
@@ -62,20 +63,20 @@
   }
   
   .buttons-container a.study {
-    background: var(--color-primary-light);
+    background: #916BEA;
   }
   
   .buttons-container a.study:hover {
-    background: var(--color-primary-lighter);
+    background: #9871F5;
   }
   
   .buttons-container a.give-classes {
-    background: var(--color-secondary);
+    background: #774DD6;
     margin: 0;
   }
   
   .buttons-container a.give-classes:hover {
-    background: var(--color-secondary-dark);
+    background: #774DD6;
   }
   
   .total-connections {
@@ -141,3 +142,32 @@
       font-size: 1.2rem;
     }
 }
+h1, h2, p, a, span{
+  font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*:root {
+  --color-background: #F0F0F7;
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;
+  --color-primary: #3c1053;
+  --color-primary-dark: #774DD6;
+  --color-primary-darker: #6842c2;
+  --color-secondary: #04D361;
+  --color-secondary-dark: #04BF58;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-text-title: #32264D;
+  --color-text-complement: #9C98A6;
+  --color-text-base: #6A6180;
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-base: #FFFFFF;
+  --color-box-footer: #FAFAFC;
+  --color-small-info: #C1BCCC;
+
+}*/
