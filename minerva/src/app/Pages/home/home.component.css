@@ -23,22 +23,17 @@
     width: 100%;
   }
   #container {
-    width: 90vw;
-    max-width: 700px;
+    width: auto;
   }
   
   .buttons-container {
+    
     display: flex;
     justify-content: center;
     margin: 3.2rem 0;
   }
   
   .buttons-container a {
-    font-family: 'opendyslexic';
-    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
-    font-style: normal;
-    font-weight: normal;
-    
     width: 30rem;
     height: 10.4rem;
     border-radius: 0.8rem;
@@ -63,19 +58,35 @@
   }
   
   .buttons-container a.study {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
     background: #916BEA;
   }
   
   .buttons-container a.study:hover {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
     background: #9871F5;
   }
   
   .buttons-container a.give-classes {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
     background: #774DD6;
     margin: 0;
   }
   
   .buttons-container a.give-classes:hover {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
     background: #774DD6;
   }
   
