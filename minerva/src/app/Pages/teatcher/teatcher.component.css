@@ -18,6 +18,13 @@
   --color-box-footer: #FAFAFC;
   --color-small-info: #C1BCCC;
   font-size: 60%; controle das medidas rem */
+  h1, h2, p, a, span,label,legend{
+    font-family: 'opendyslexic';
+      src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+      font-style: normal;
+      font-weight: normal;
+  }
+
   #page-give-classes #container {
     width: 100vw;
     height: 100vh;
