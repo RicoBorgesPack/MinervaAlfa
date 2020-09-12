@@ -1,10 +1,10 @@
 
 #page-landing {
-    background: #3c1053;;
+    background: #111053;;
   }
   
   #container {
-    background: #D4C2FF;
+    background: #c2d2ff;
   }
   
   .logo-container {
@@ -62,7 +62,7 @@
     src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font-style: normal;
     font-weight: normal;
-    background: #916BEA;
+    background: #7e6bea;
   }
   
   .buttons-container a.study:hover {
@@ -70,7 +70,7 @@
     src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font-style: normal;
     font-weight: normal;
-    background: #9871F5;
+    background: #7371f5;
   }
   
   .buttons-container a.give-classes {
@@ -78,7 +78,7 @@
     src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font-style: normal;
     font-weight: normal;
-    background: #774DD6;
+    background: #664dd6;
     margin: 0;
   }
   
