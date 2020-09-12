@@ -68,7 +68,7 @@
     background: none;
     border: 0;
   
-    color: #3c1053;
+    color: #1c1053;
   
     font: 700 1.6rem Archivo;
   
@@ -78,7 +78,7 @@
   }
   
   #page-give-classes fieldset legend button:hover {
-    color: #774DD6;
+    color: #6b4dd6;
   }
   
   #page-give-classes fieldset + fieldset {
@@ -106,7 +106,7 @@
   
     font-size: 1.4rem;
     line-height: 2.4rem;
-    color: #9C98A6;
+    color: #9998a6;
   }
   
   #page-give-classes main footer p img {
@@ -116,7 +116,7 @@
   #page-give-classes main footer button {
     width: 100%;
     height: 5.6rem;
-    background: #04D361;
+    background: #04d3b7;
     color: var(--color-button-text);
     border: 0;
     border-radius: 0.8rem;
@@ -133,7 +133,7 @@
   }
   
   #page-give-classes main footer button:hover {
-    background: #04BF58;
+    background: #04bfbf;
   } 
   
   .schedule-item + .schedule-item {
