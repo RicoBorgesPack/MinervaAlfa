@@ -9,8 +9,8 @@
       </div>
 
       <div class="header-content">
-        <strong>Que incrível que você quer dar aulas.</strong>
-        <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+        <strong>Amazing, so do you want to teatch other persons</strong>
+        <p>First thing to do is sign up in this form</p>
         
       </div>
 
@@ -20,25 +20,25 @@
       <form action="/save-classes" id="create-class" method="POST">
 
         <fieldset>
-          <legend>Seus dados</legend>
+          <legend>Your data</legend>
 
           <div class="input-block">
-            <label for="name">Nome completo</label>
+            <label for="name">Full name</label>
             <input name="name" id="name" required>
           </div>
 
           <div class="input-block">
-            <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
+            <label for="avatar">Profile pic<small></small></label>
             <input name="avatar" id="avatar" type="url" required>
           </div>
 
           <div class="input-block">
-            <label for="whatsapp">WhatsApp <small>(somente números)</small></label>
+            <label for="whatsapp">WhatsApp Number<small>Only numbers</small></label>
             <input name="whatsapp" id="whatsapp" type="number" required>
           </div>
 
           <div class="textarea-block">
-            <label for="bio">Biografia</label>
+            <label for="bio">Bio</label>
             <textarea name="bio" id="bio" required></textarea>
           </div>
 
@@ -46,10 +46,10 @@
 
 
         <fieldset>
-          <legend>Sobre a aula</legend>
+          <legend>About yout course</legend>
 
           <div class="select-block">
-            <label for="subject">Matéria</label>
+            <label for="subject">Language</label>
             <!--<select name="subject" id="subject" required>
               <option value="">Selecione uma opção</option>
               
@@ -63,8 +63,8 @@
           </div>
 
           <div class="input-block">
-            <label for="cost">Custo da sua hora/aula 
-              <small>(R$)</small>
+            <label for="cost">Value of your hour
+              <small>USD$</small>
             </label>
             <input name="cost" id="cost" type="number">
           </div>
@@ -72,14 +72,14 @@
 
 
         <fieldset id="schedule-items">
-          <legend>Horários disponíveis
-            <button type="button" id="add-time">+ Novo Horário</button>
+          <legend>Time avaliable
+            <button type="button" id="add-time">+ New time</button>
           </legend>
 
           <div class="schedule-item">
 
             <div class="select-block">
-              <label for="weekday">Dia da semana</label>
+              <label for="weekday">Weekday</label>
               <!--<select name="weekday[]" required>
                 <option value="">Selecione uma opção</option>
               
@@ -93,12 +93,12 @@
             </div>
 
             <div class="input-block">
-              <label for="time_from">Das</label>
+              <label for="time_from">From</label>
               <input type="time" name="time_from[]" required>
             </div>
 
             <div class="input-block">
-              <label for="time_to">Até</label>
+              <label for="time_to">Until</label>
               <input type="time" name="time_to[]" required>
             </div>
 
@@ -111,7 +111,7 @@
       <footer>
         <p>
           <img src="" alt="Aviso importante">
-          Importante! <br> Preencha todos os dados
+          Insert all datas
         </p>
         <button type="submit" form="create-class">Salvar cadastro</button>
       </footer>
