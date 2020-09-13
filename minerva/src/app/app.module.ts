@@ -9,13 +9,15 @@ import { HeaderComponent } from './UI/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Pages/home/home.component';
 import { TeatcherComponent } from './Pages/teatcher/teatcher.component';
+import { CarrouselComponent } from './UI/carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    TeatcherComponent
+    TeatcherComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,
