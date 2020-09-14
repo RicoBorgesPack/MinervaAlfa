@@ -138,7 +138,9 @@
   
     .hero-image {
       grid-area: img;
-      height: 350px;
+      height: 300px;
+      width: 300px;
+      align-content: center;
     }
   
     .buttons-container {
