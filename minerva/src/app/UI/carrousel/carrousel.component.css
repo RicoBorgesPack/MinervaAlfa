@@ -1,9 +1,7 @@
-body {
-    font-family: Helvetica; 
-    font-weight: 400;
-    background: #ecf0f1;
-  }
+
   h1 {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font-size: 1.5em;
     text-align: center;
     margin: 1.2em 0;
@@ -23,6 +21,8 @@ body {
     overflow: hidden;
   }
   .carrousel h2 {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     margin: 0;
     margin-top: -1.7em;
     padding: 0;
@@ -50,9 +50,13 @@ body {
     float: left;
   }
   .carrousel li p{
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     margin-top: 0;  
   }
   .carrousel li q {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     max-width: 90%;
     margin: auto;
     color: #666666;
