@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Pages/home/home.component';
 import { TeatcherComponent } from './Pages/teatcher/teatcher.component';
 import { CarrouselComponent } from './UI/carrousel/carrousel.component';
+import { ClassesComponent } from './Pages/classes/classes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CarrouselComponent } from './UI/carrousel/carrousel.component';
     HeaderComponent,
     HomeComponent,
     TeatcherComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    ClassesComponent
   ],
   imports: [
     BrowserModule,
