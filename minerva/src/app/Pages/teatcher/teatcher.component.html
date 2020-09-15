@@ -15,62 +15,54 @@
       </div>
 
     </header>
-
     <main>
-      <form action="/save-classes" id="create-class" method="POST">
-
+      <form action="" id="create-classes">
         <fieldset>
-          <legend>Your data</legend>
+          <legend>Seus Dados</legend>
 
           <div class="input-block">
             <label for="name">Full name</label>
             <input name="name" id="name" required>
           </div>
-
           <div class="input-block">
             <label for="avatar">Profile pic<small></small></label>
             <input name="avatar" id="avatar" type="url" required>
           </div>
-
           <div class="input-block">
             <label for="whatsapp">WhatsApp Number<small>(Only numbers)</small></label>
             <input name="whatsapp" id="whatsapp" type="number" required>
           </div>
-
           <div class="textarea-block">
             <label for="bio">Bio</label>
             <textarea name="bio" id="bio" required></textarea>
           </div>
-
         </fieldset>
 
-
         <fieldset>
-          <legend>About yout course</legend>
-
+          <legend>About the class</legend>
           <div class="select-block">
-            <label for="subject">Language</label>
-            <!--<select name="subject" id="subject" required>
-              <option value="">Selecione uma opção</option>
-              
-              {% for subject in subjects %}
-                <option value="{{loop.index}}">
-                  {{ subject }}
-                </option>
-              {% endfor %}
-
-            </select>-->
+            <label for="subject"></label>
+            <select name="subject" id="subject" required>
+              <option value="" disabled="" hidden="">Click in an option</option>
+              <option value="1">English</option>
+              <option value="2">Spanish</option>
+              <option value="3">French</option>
+              <option value="4">Chinese</option>
+              <option value="5">Portuguese</option>
+              <option value="6">Japanese</option>
+              <option value="7">German</option>
+              <option value="8">Korean</option>
+              <option value="9">Russian</option>
+            </select>
           </div>
 
           <div class="input-block">
             <label for="cost">Value of your hour
-              <small>USD$</small>
+              <small>/USD$</small>
             </label>
             <input name="cost" id="cost" type="number">
           </div>
         </fieldset>
-
-
         <fieldset id="schedule-items">
           <legend>Time avaliable
             <button type="button" id="add-time">+ New time</button>
@@ -80,16 +72,7 @@
 
             <div class="select-block">
               <label for="weekday">Weekday</label>
-              <!--<select name="weekday[]" required>
-                <option value="">Selecione uma opção</option>
               
-                {% for weekday in weekdays %}
-                  <option value="{{  loop.index0 }}">
-                    {{ weekday }}
-                  </option>
-                {% endfor %}
-
-              </select>-->
             </div>
 
             <div class="input-block">
@@ -105,9 +88,7 @@
           </div>
 
         </fieldset>
-
       </form>
-
       <footer>
         <p>
           <img src="" alt="Aviso importante">

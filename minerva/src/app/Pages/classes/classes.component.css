@@ -1,4 +1,25 @@
+/*--color-background: #F0F0F7;
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;
+  --color-primary: #3c1053;
+  --color-primary-dark: #774DD6;
+  --color-primary-darker: #6842c2;
+  --color-secondary: #04D361;
+  --color-secondary-dark: #04BF58;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-text-title: #32264D;
+  --color-text-complement: #9C98A6;
+  --color-text-base: #6A6180;
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-base: #FFFFFF;
+  --color-box-footer: #FAFAFC;
+  --color-small-info: #C1BCCC;
+  font-size: 60%; controle das medidas rem */
 #page-study #container {
+   
     width: 100vw;
     height: 100vh;
   }
@@ -8,7 +29,7 @@
   }
   
   #search-teachers label {
-    color: var(--color-text-in-primary);
+    color: #D4C2FF;
   }
   
   #search-teachers .select-block {
@@ -18,8 +39,8 @@
   #search-teachers button {
     width: 100%;
     height: 5.6rem;
-    background: var(--color-secondary);
-    color: var(--color-button-text);
+    background: #04D361;
+    color: #FFFFFF;
     border: 0;
     border-radius: 0.8rem;
     cursor: pointer;
@@ -32,7 +53,7 @@
   }
   
   #search-teachers button:hover {
-    background-color: var(--color-secondary-dark);
+    background-color: #04BF58;
   }
   
   #page-study main {
@@ -41,8 +62,8 @@
   }
   
   .teacher-item {
-    background-color: var(--color-box-base);
-    border: 1px solid var(--color-line-in-white);
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6F0;
     border-radius: 0.8rem;
     margin-top: 2.4rem;
   }
@@ -66,7 +87,7 @@
   .teacher-item header div strong {
     font: 700 2.4rem Archivo;
     display: block;
-    color: var(--color-text-title)
+    color: #32264D;
   }
   
   .teacher-item header div span {
@@ -84,8 +105,8 @@
   
   .teacher-item footer {
     padding: 3.2rem 2rem;
-    background-color: var(--color-box-footer);
-    border-top: 1px solid var(--color-line-in-white);
+    background-color: #FAFAFC;
+    border-top: 1px solid #E6E6F0;
     margin-top: 3.2rem;
   
     display: flex;
@@ -94,22 +115,26 @@
   }
   
   .teacher-item footer p {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font-size: 1.4rem;
     line-height: 2.4rem;
-    color: var(--color-text-complement);
+    color: #9C98A6;
   }
   
   .teacher-item footer p strong {
+    font-family: 'opendyslexic';
+      src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font-size: 1.6rem;
-    color: var(--color-primary);
+    color: #3c1053;
     display: block;
   }
   
   .teacher-item footer .button {
     width: 20rem;
     height: 5.6rem;
-    background: var(--color-secondary);
-    color: var(--color-button-text);
+    background: #04D361;
+    color: #FFFFFF;
     border: 0;
     border-radius: 0.8rem;
     cursor: pointer;
@@ -126,7 +151,7 @@
   }
   
   .teacher-item footer .button:hover {
-    background: var(--color-secondary-dark);
+    background: #04BF58;
   }
   
   #page-study main .no-results {
@@ -178,6 +203,8 @@
     }
   
     #page-study main {
+      font-family: 'opendyslexic';
+      src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
       padding: 32px 0;
       max-width: 740px;
       margin: 0 auto;

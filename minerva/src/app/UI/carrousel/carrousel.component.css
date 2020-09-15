@@ -14,8 +14,8 @@
     background: #ffffff;
     text-align: center;
     padding: 4em 0;
-    height: 7.5em;
-    max-width: 750px;
+    height: 350px;
+    max-width: 600px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -63,11 +63,16 @@
     font-size: 1.3em;
     font-weight: bold;
   }
+  .hero-image {
+    grid-area: img;
+    height: 300px;
+    width: 300px;
+    align-content: center;
+  }
   .carrousel li img {
-    width: 3em;
-    height: 3em;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 50%;
     margin-left: -1.5em;
     margin-right: 0.5em;
     vertical-align: middle;
