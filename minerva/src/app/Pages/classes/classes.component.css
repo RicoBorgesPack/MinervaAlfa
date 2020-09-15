@@ -81,10 +81,14 @@
   }
   
   .teacher-item header div {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     margin-left: 2.4rem;
   }
   
   .teacher-item header div strong {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font: 700 2.4rem Archivo;
     display: block;
     color: #32264D;
@@ -97,6 +101,8 @@
   }
   
   .teacher-item > p {
+    font-family: 'opendyslexic';
+    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     padding: 0 2rem;
     font-size: 1.6rem;
     line-height: 2.8rem;
