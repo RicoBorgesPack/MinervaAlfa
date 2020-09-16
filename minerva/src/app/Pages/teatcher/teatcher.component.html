@@ -9,22 +9,36 @@
     </div>
     <form action="#" class="form-right">
       <div>
-        <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" />
+        <input mat input type="text" name="username" id="username" placeholder="Username" autocomplete="off" />
       </div>
       <div>
-        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" />
+        <input mat-input type="email" name="email" id="email" placeholder="Email" autocomplete="off" />
+      </div>
+      <div class="select-block">
+        <label for="subject">Nationatily</label>
+        <select name="subject" id="subject" required>
+          <option value="">Select an Nationality</option>
+          <option value="1">Indian</option>
+          <option value="1">American</option>
+          <option value="2">Mexican</option>
+          <option value="3">German</option>
+          <option value="4">Brazilian</option>
+          <option value="5">Japanese</option>
+          <option value="6">French</option>
+        </select>
+      <div>
+        <mat-form-field class="example-full-width">
+          <mat-label>Telephone</mat-label>
+          <span matPrefix>+1 &nbsp;</span>
+          <input type="tel" matInput placeholder="555-555-1234">
+          <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
       </div>
       <div>
-        <input type="tel" name="wpp" id="wpp" placeholder="Whatsapp" autocomplete="off" />
+        <input mat-input type="text" name="photo" id="PhotoTeatcher" placeholder="Post you photo" autocomplete="off" />
       </div>
       <div>
-        <input type="tel" name="nation" id="nation" placeholder="Whatsapp" autocomplete="off" />
-      </div>
-      <div>
-        <input type="text" name="photo" id="PhotoTeatcher" placeholder="Post you photo" autocomplete="off" />
-      </div>
-      <div>
-        <input type="text" name="Bio" id="Bio" placeholder="Post about you" autocomplete="off" />
+        <input mat-input #message maxlength="256" type="text" name="Bio" id="Bio" placeholder="Post about you" autocomplete="off" />
       </div>
         <div class="select-block">
           <label for="subject"></label>
@@ -52,7 +66,7 @@
           </select>
         </div>
       <div class="buttons">
-        <a class="create-account" href="#">Post your contact</a>
+        <button mat-button>Post your contact</button>
       </div>
     </form>
   </div>

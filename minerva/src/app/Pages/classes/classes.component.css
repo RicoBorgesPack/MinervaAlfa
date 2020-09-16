@@ -8,3 +8,11 @@
   background-image: url('https://cdn.theatlantic.com/assets/media/img/nj/2016/1/26/asian-americans-feel-held/jason-shen-headshot.jpg');
   background-size: cover;
 }
+p{
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+}
+button{
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+}

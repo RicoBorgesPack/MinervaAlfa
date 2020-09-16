@@ -6,6 +6,10 @@
  #wrapper {
 	 width: 100%;
 }
+input{
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+}
  @media screen and (min-width: 1024px) {
 	 #wrapper {
 		 width: 1100px;
@@ -113,7 +117,7 @@
 }
  #wrapper .form-layout .form-right div input:focus {
 	 outline: none;
-	 border-color: #afd275;
+	 border-color: blue;
 	 box-sizing: border-box;
 }
  #wrapper .form-layout .form-right .buttons {

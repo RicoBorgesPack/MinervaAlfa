@@ -8,6 +8,8 @@ import{environment} from '../environments/environment'
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule, MatCard} from '@angular/material/card';
 import {MatButton, MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,7 +38,9 @@ import { from } from 'rxjs';
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
