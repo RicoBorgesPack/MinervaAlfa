@@ -1,100 +1,56 @@
-<div id="container">
-    <header class="page-header">
-
-      <div class="top-bar-container">
-        <a href="/">
-            <mat-icon>arrow_back</mat-icon>
-        </a>
-        <img src="/assets/logo.png" alt="logo" width="250px">
+<div id="wrapper">
+  <div class="form-layout">
+    <div class="form-left">
+      <div class="logo"><img src="/assets/logo.png" alt="minerva"
+        width="250px"></div>
+      <div class="info">Register your teatcher contact</div>
+      <div class="footer">
       </div>
-
-      <div class="header-content">
-        <p>Amazing, so do you want to teatch languages other persons</p>
-        <p>First thing to do is sign up in this form</p>
-        
+    </div>
+    <form action="#" class="form-right">
+      <div>
+        <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" />
       </div>
-
-    </header>
-    <main>
-      <form action="" id="create-classes">
-        <fieldset>
-          <legend>Your Data</legend>
-
-          <div class="input-block">
-            <label for="name">Full name</label>
-            <input name="name" id="name" required>
-          </div>
-          <div class="input-block">
-            <label for="avatar">Profile pic<small></small></label>
-            <input name="avatar" id="avatar" type="url" required>
-          </div>
-          <div class="input-block">
-            <label for="whatsapp">WhatsApp Number<small>(Only numbers)</small></label>
-            <input name="whatsapp" id="whatsapp" type="number" required>
-          </div>
-          <div class="textarea-block">
-            <label for="bio">Bio</label>
-            <textarea name="bio" id="bio" required></textarea>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>About the class</legend>
-          <div class="select-block">
-            <label for="subject"></label>
-            <select name="subject" id="subject" required>
-              <option value="" disabled="" hidden="">Click in an option</option>
-              <option value="1">English</option>
-              <option value="2">Spanish</option>
-              <option value="3">French</option>
-              <option value="4">Chinese</option>
-              <option value="5">Portuguese</option>
-              <option value="6">Japanese</option>
-              <option value="7">German</option>
-              <option value="8">Korean</option>
-              <option value="9">Russian</option>
-            </select>
-          </div>
-
-          <div class="input-block">
-            <label for="cost">Value of your hour
-              <small>/USD$</small>
-            </label>
-            <input name="cost" id="cost" type="number">
-          </div>
-        </fieldset>
-        <fieldset id="schedule-items">
-          <legend>Time avaliable
-            <button type="button" id="add-time">+ New time</button>
-          </legend>
-
-          <div class="schedule-item">
-
-            <div class="select-block">
-              <label for="weekday">Weekday</label>
-              
-            </div>
-
-            <div class="input-block">
-              <label for="time_from">From</label>
-              <input type="time" name="time_from[]" required>
-            </div>
-
-            <div class="input-block">
-              <label for="time_to">Until</label>
-              <input type="time" name="time_to[]" required>
-            </div>
-
-          </div>
-
-        </fieldset>
-      </form>
-      <footer>
-        <p>
-          <img src="" alt="Aviso importante">
-          Insert all datas
-        </p>
-        <button type="submit" form="create-class">Signup</button>
-      </footer>
-    </main>
+      <div>
+        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" />
+      </div>
+      <div>
+        <input type="tel" name="password" id="password" placeholder="Whatsapp" autocomplete="off" />
+      </div>
+      <div>
+        <input type="email" name="photo" id="PhotoTeatcher" placeholder="Post you photo" autocomplete="off" />
+      </div>
+      <div>
+        <input type="text" name="Bio" id="Bio" placeholder="Post about you" autocomplete="off" />
+      </div>
+        <div class="select-block">
+          <label for="subject"></label>
+          <select name="subject" id="subject" required>
+            <option value="">Select an Option</option>
+            <option value="1">English</option>
+            <option value="2">Spanish</option>
+            <option value="3">Mandarin</option>
+            <option value="4">French</option>
+            <option value="5">Japanese</option>
+            <option value="6">German</option>
+          </select>
+        </div>
+        <div class="select-block">
+          <label for="subject"></label>
+          <select name="subject" id="subject" required>
+            <option value="">Select an Option</option>
+            <option value="1">Sun</option>
+            <option value="2">Mon</option>
+            <option value="3">Tue</option>
+            <option value="4">Wed</option>
+            <option value="5">Thur</option>
+            <option value="6">Fri</option>
+            <option value="6">Sat</option>
+          </select>
+        </div>
+      <div class="buttons">
+        <a class="create-account" href="#">Post your contact</a>
+      </div>
+    </form>
   </div>
+</div>

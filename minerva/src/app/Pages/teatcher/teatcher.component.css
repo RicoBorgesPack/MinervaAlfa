@@ -1,182 +1,153 @@
-/*--color-background: #F0F0F7;
-  --color-primary-lighter: #9871F5;
-  --color-primary-light: #916BEA;
-  --color-primary: #3c1053;
-  --color-primary-dark: #774DD6;
-  --color-primary-darker: #6842c2;
-  --color-secondary: #04D361;
-  --color-secondary-dark: #04BF58;
-  --color-title-in-primary: #FFFFFF;
-  --color-text-in-primary: #D4C2FF;
-  --color-text-title: #32264D;
-  --color-text-complement: #9C98A6;
-  --color-text-base: #6A6180;
-  --color-line-in-white: #E6E6F0;
-  --color-input-background: #F8F8FC;
-  --color-button-text: #FFFFFF;
-  --color-box-base: #FFFFFF;
-  --color-box-footer: #FAFAFC;
-  --color-small-info: #C1BCCC;
-  font-size: 60%; controle das medidas rem */
-  h1, h2, p, a, span,label,legend{
-    font-family: 'opendyslexic';
-      src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
-      font-style: normal;
-      font-weight: normal;
-  }
+@import url('https://fonts.googleapis.com/css?family=Abel');
+ body {
+	 background: #f0eded;
+	 font-family: 'Abel', sans-serif;
+}
+ #wrapper {
+	 width: 100%;
+}
+ @media screen and (min-width: 1024px) {
+	 #wrapper {
+		 width: 1100px;
+		 margin: 0 auto;
+	}
+}
+ #wrapper .form-layout {
+	 display: grid;
+	 grid-template-columns: auto;
+	 grid-template-rows: auto auto auto;
+	 grid-template-areas: "left" "." "right";
+	 background: #fff;
+}
+ @media screen and (min-width: 1024px) {
+	 #wrapper .form-layout {
+		 grid-template-columns: 50% 50%;
+		 grid-template-areas: "left right";
+		 grid-template-rows: auto;
+		 flex-direction: row;
+		 margin: 0 auto;
+	}
+}
+ #wrapper .form-layout .form-left {
+	 grid-area: left;
+	 background: url('https://wptricks.dk/billeder/form_bg-1024x819.jpg');
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 width: 100%;
+	 position: relative;
+	 padding: 25px;
+	 box-sizing: border-box;
+	 display: grid;
+	 grid-template-columns: auto;
+	 grid-template-rows: 33% 33% 33%;
+	 grid-template-areas: "logo" "info" "footer";
+}
+ #wrapper .form-layout .form-left:before {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 content: '';
+	 background: rgba(0, 0, 0, 0.75);
+	 width: 100%;
+	 height: 100%;
+}
+ #wrapper .form-layout .form-left .logo {
+	 grid-area: logo;
+	 align-self: start;
+	 color: #fff;
+	 z-index: 2;
+	 font-size: 22px;
+	 text-align: center;
+	 text-transform: uppercase;
+}
+ #wrapper .form-layout .form-left .info {
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+	 grid-area: info;
+	 color: #fff;
+	 z-index: 2;
+	 text-align: center;
+	 font-size: 32px;
+	 text-transform: uppercase;
+	 align-self: center;
+}
+ #wrapper .form-layout .form-left .info span {
+	 display: block;
+	 font-size: 24px;
+	 text-transform: none;
+}
+ #wrapper .form-layout .form-left .footer {
+	 grid-area: footer;
+	 color: #fff;
+	 z-index: 2;
+	 align-self: end;
+	 text-align: center;
+}
+ #wrapper .form-layout .form-left .footer a {
+	 color: #fff;
+}
+ #wrapper .form-layout .form-right {
+	 grid-area: right;
+	 width: 100%;
+	 display: flex;
+	 flex-direction: column;
+	 margin: 25px 0;
+	 padding: 0 20px;
+	 box-sizing: border-box;
+}
+ #wrapper .form-layout .form-right div {
+	 width: 100%;
+	 margin: 10px 0;
+	 position: relative;
+}
+ #wrapper .form-layout .form-right div input {
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+	 width: 100%;
+	 border: 0;
+	 border-bottom: 2px solid #e1e1e1;
+	 padding: 8px 0;
+	 box-sizing: border-box;
+	 color: #666;
+	 transition: all 0.2s ease;
+}
+ #wrapper .form-layout .form-right div input:focus {
+	 outline: none;
+	 border-color: #afd275;
+	 box-sizing: border-box;
+}
+ #wrapper .form-layout .form-right .buttons {
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+	 display: flex;
+	 justify-content: space-between;
+	 flex-direction: row;
+	 align-items: center;
+}
+ #wrapper .form-layout .form-right .buttons a.create-account {
+   
+	 background: #c2cad0;
+	 display: inline-block;
+	 color: #000;
+	 text-decoration: none;
+	 padding: 8px 15px;
+	 transition: all 0.2s ease;
+}
+ #wrapper .form-layout .form-right .buttons a.create-account:hover {
+	 background: #3e35b8;
+	 color: #000;
+}
 
-  #page-give-classes #container {
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  #page-give-classes .page-header .header-content {
-    margin-bottom: 6.4rem;
-  }
-  
-  #page-give-classes main {
-    background: #FFFFFF;
-    width: 100%;
-    max-width: 74rem;
-    border-radius: 0.8rem;
-    margin: -3.2rem auto 3.2rem;
-    padding-top: 6.4rem;
-  }
-  
-  #page-give-classes fieldset {
-    border: none;
-    background-color: #32264D;
-    padding: 0 2.4rem;
-  }
-  
-  #page-give-classes fieldset legend {
-    font: 700 2.4rem Archivo;
-    color: #32264D;
-    margin-bottom: 2.4rem;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    width: 100%;
-  
-    padding-bottom: 1.6rem;
-    border-bottom: 1px solid #E6E6F0;
-  }
-  
-  #page-give-classes fieldset legend button {
-    background: none;
-    border: 0;
-  
-    color: #1c1053;
-  
-    font: 700 1.6rem Archivo;
-  
-    cursor: pointer;
-  
-    transition: 0.2s;
-  }
-  
-  #page-give-classes fieldset legend button:hover {
-    color: #664dd6;
-  }
-  
-  #page-give-classes fieldset + fieldset {
-    margin-top: 6.4rem;
-  }
-  
-  #page-give-classes .input-block + .input-block,
-  #page-give-classes .input-block + .textarea-block,
-  #page-give-classes .select-block + .input-block {
-    margin-top: 2.4rem;
-  }
-  
-  #page-give-classes main footer {
-    padding: 4rem 2.4rem;
-  
-    background:  #FAFAFC;
-    border-top: 1px solid #FAFAFC;
-    margin-top: 6.4rem;
-  }
-  
-  #page-give-classes main footer p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    color: #9998a6;
-  }
-  
-  #page-give-classes main footer p img {
-    margin-right: 2rem;
-  }
-  
-  #page-give-classes main footer button {
-    width: 100%;
-    height: 5.6rem;
-    background: #04d3b7;
-    color: #FFFFFF;
-    border: 0;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    font: 700 1.6rem Archivo;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-  
-    transform: 0.2s;
-    margin-top: 3.2rem;
-  }
-  
-  #page-give-classes main footer button:hover {
-    background: #04bfbf;
-  } 
-  
-  .schedule-item + .schedule-item {
-    margin-top: 3.2rem;
-    padding-top: 3.2rem;
-  
-    border-top: 1px solid #E6E6F0;
-  }
-  
-  @media (min-width: 700px) {
-    #page-give-classes #container {
-      max-width: 100vw;
-    }
-  
-    #page-give-classes .page-header .header-content {
-      margin-bottom: 0;
-    }
-  
-    #page-give-classes main fieldset {
-      padding: 0 64px;
-    }
-  
-    .schedule-item {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      column-gap: 1.6rem;
-    }
-  
-    #page-give-classes #schedule-items .select-block + .input-block,
-    #page-give-classes #schedule-items .input-block + .input-block {
-      margin-top: 0;
-    }
-  
-    #page-give-classes main footer {
-      padding: 40px 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    #page-give-classes main footer button {
-      margin-top: 0;
-  
-      width: 200px;
-    }
-  }
+
+.input-block input,
+.select-block select{
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  padding: 0 1.6rem;
+  font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+}
+ 
