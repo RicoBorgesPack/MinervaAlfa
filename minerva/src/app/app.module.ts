@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import {AngularFireModule} from '@angular/fire';
 import{AngularFirestoreModule} from '@angular/fire/firestore';
 import{environment} from '../environments/environment'
+import { ReactiveFormsModule } from "@angular/forms";
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule, MatCard} from '@angular/material/card';
 import {MatButton, MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +22,9 @@ import { TeatcherComponent } from './Pages/teatcher/teatcher.component';
 import { CarrouselComponent } from './UI/carrousel/carrousel.component';
 import { ClassesComponent } from './Pages/classes/classes.component';
 import { CardComponent } from './UI/card/card.component';
-import { from } from 'rxjs';
+
+import {TeatcherService} from "./Services/teatcher.service";
+import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,7 @@ import { from } from 'rxjs';
     CarrouselComponent,
     ClassesComponent,
     CardComponent,
+    TeatcherListComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +45,11 @@ import { from } from 'rxjs';
     MatCardModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [TeatcherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
