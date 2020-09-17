@@ -25,6 +25,8 @@ import { CardComponent } from './UI/card/card.component';
 
 import {TeatcherService} from "./Services/teatcher.service";
 import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.component';
+import { ModelComponent } from './Pages/model/model.component';
+import { ModelListComponent } from './UI/model-list/model-list.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.componen
     CarrouselComponent,
     ClassesComponent,
     CardComponent,
-    TeatcherListComponent
+    TeatcherListComponent,
+    ModelComponent,
+    ModelListComponent
   ],
   imports: [
     BrowserModule,
