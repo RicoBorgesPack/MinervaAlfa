@@ -8,7 +8,7 @@ import { CardComponent } from './UI/card/card.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'teatch', component: TeatcherComponent },
+  { path: 'teach', component: TeatcherComponent },
   { path: 'study', component:  ClassesComponent},
   { path: 'feed', component:  CardComponent}
 ];
