@@ -22,8 +22,6 @@ import { TeatcherComponent } from './Pages/teatcher/teatcher.component';
 import { CarrouselComponent } from './UI/carrousel/carrousel.component';
 import { ClassesComponent } from './Pages/classes/classes.component';
 import { CardComponent } from './UI/card/card.component';
-
-import {TeatcherService} from "./Services/teatcher.service";
 import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.component';
 import { ModelComponent } from './Pages/model/model.component';
 import { ModelListComponent } from './UI/model-list/model-list.component';
@@ -53,7 +51,7 @@ import { ModelListComponent } from './UI/model-list/model-list.component';
     MatSelectModule,
     ReactiveFormsModule
   ],
-  providers: [TeatcherService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
