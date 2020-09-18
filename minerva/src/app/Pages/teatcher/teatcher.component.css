@@ -2,11 +2,9 @@ h1{
 	font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 }
-input{
+input, textarea, select, button{
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 }
-.form{
 
-}
  

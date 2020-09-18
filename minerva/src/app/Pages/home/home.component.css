@@ -1,19 +1,20 @@
 .container{
 }
 .logo-container{
-  background:rgb(181, 236, 236);
+  background:white;
 }
 .buttons-container{
-  background: rgb(181, 236, 236);
+  background: white
 }
-button{
+button, h2{
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
   font-size: 25px;
 }
 h2{
-  font-family: 'opendyslexic';
-  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
   font-size:50px;
-  color: grey;
+  color: rgb(97, 97, 238);
+}
+button:hover{
+  background:rgb(97, 97, 238);
 }

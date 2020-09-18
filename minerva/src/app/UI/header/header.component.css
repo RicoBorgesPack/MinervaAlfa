@@ -98,7 +98,7 @@ header {
     width: 300px;
 }
     .block {
-        margin-bottom: 25px;
+        margin-bottom: 0px;
         background: #394264;
         border-radius: 5px;
     }

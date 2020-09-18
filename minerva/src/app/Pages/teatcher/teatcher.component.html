@@ -3,44 +3,52 @@
     <mat-card-title><h1>Register as a Teacher in Minerva</h1></mat-card-title>
     <mat-card-subtitle><h1>Just respond this form</h1></mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-    <div>
-<input mat-input type="text" name="username" placeholder="Username" autocomplete="off">
+  <mat-card-content> 
+  <div class="inserts">
+  <img width="450px"src="https://americancollegespain.com/wp-content/uploads/2018/10/bigstock-pretty-teacher-smiling-at-came-69887626.jpg">
+  <div>
+  <input mat-input type="text" name="username" placeholder="Username" autocomplete="off">
+  </div>
+  <div>
+  <input mat-input type="email" name="email" placeholder="email" autocomplete="on">
+  </div>
+  <div>
+    <input mat-input type="tel" name="wpp" placeholder="wpp" autocomplete="on">
+  </div>
+  <div>
+    <textarea name="bio" id="bio" placeholder="Write your bio"  required></textarea>
+  </div>
+  <div>
+    <input mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" autocomplete="on">
+  </div>
+  <div class="select-block">
+    <label for="subject"></label>
+    <select name="subject" id="subject" required>
+      <option value="">Select an Language</option>
+      <option value="1">English</option>
+      <option value="2">Spanish</option>
+      <option value="3">Mandarin</option>
+      <option value="4">French</option>
+      <option value="5">Japanese</option>
+      <option value="6">German</option>
+    </select>
+  </div>
+  <div class="select-block">
+    <label for="subject"></label>
+    <select name="subject" id="subject" required>
+      <option value="">Select an Weekday</option>
+      <option value="1">Sun</option>
+      <option value="2">Mon</option>
+      <option value="3">Tue</option>
+      <option value="4">Wed</option>
+      <option value="5">Thur</option>
+      <option value="6">Fri</option>
+      <option value="6">Sat</option>
+    </select>
+  </div>
+  <div class="buttons">
+    <button mat-button>Register</button>
+  </div>
 </div>
-<div>
-<input mat-input type="email" name="email" placeholder="email" autocomplete="on">
-</div>
-<div>
-  <input mat-input type="tel" name="wpp" placeholder="wpp" autocomplete="on">
-</div>
-<div>
-  <textarea name="bio" id="bio" required></textarea>
-</div>
-<div class="select-block">
-  <label for="subject"></label>
-  <select name="subject" id="subject" required>
-    <option value="">Select an Option</option>
-    <option value="1">English</option>
-    <option value="2">Spanish</option>
-    <option value="3">Mandarin</option>
-    <option value="4">French</option>
-    <option value="5">Japanese</option>
-    <option value="6">German</option>
-  </select>
-</div>
-<div class="select-block">
-  <label for="subject"></label>
-  <select name="subject" id="subject" required>
-    <option value="">Select an Option</option>
-    <option value="1">Sun</option>
-    <option value="2">Mon</option>
-    <option value="3">Tue</option>
-    <option value="4">Wed</option>
-    <option value="5">Thur</option>
-    <option value="6">Fri</option>
-    <option value="6">Sat</option>
-  </select>
-</div>
-
 </mat-card-content>
 </mat-card>
