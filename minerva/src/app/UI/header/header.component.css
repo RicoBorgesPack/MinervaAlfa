@@ -1,5 +1,5 @@
 h1, h2, p, a, span{
-    color:#53b2d8;
+    color:rgb(228, 226, 226);
     font-family: 'opendyslexic';
       src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
       font-style: normal;
@@ -66,8 +66,8 @@ header {
                 transition: background .3s;
             }
                 .header-menu-tab:hover {
-                    background: #374fa5;
-                    border-bottom: 4px solid #374fa5;
+                    background: white;
+                    border-bottom: 4px solid #93D2F5;
                     text-decoration: none;
                 }
                 .header-menu-tab .icon {
@@ -99,6 +99,6 @@ header {
 }
     .block {
         margin-bottom: 0px;
-        background: #394264;
+        background: #93D2F5;
         border-radius: 5px;
     }
