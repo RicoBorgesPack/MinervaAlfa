@@ -20,7 +20,7 @@ input, textarea, button{
   display: flex;
   height: 320px;
   margin: 0 auto;
-  width: 640px;
+  width: 880px;
 }
 .left {
   background: white;

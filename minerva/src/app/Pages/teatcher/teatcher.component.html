@@ -22,6 +22,7 @@
     <input mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" autocomplete="on">
   </div>
   <div class="select-block">
+    <h1>Weekday</h1>
     <section>
       <mat-checkbox class="example-margin" >Mon</mat-checkbox>
       <mat-checkbox class="example-margin" >Tue</mat-checkbox>
@@ -30,18 +31,16 @@
       <mat-checkbox class="example-margin" >Fri</mat-checkbox>
     </section>
   </div>
-  <div class="select-block">
-    <label for="subject"></label>
-    <select name="subject" id="subject" required>
-      <option value="">Select an Weekday</option>
-      <option value="1">Sun</option>
-      <option value="2">Mon</option>
-      <option value="3">Tue</option>
-      <option value="4">Wed</option>
-      <option value="5">Thur</option>
-      <option value="6">Fri</option>
-      <option value="6">Sat</option>
-    </select>
+  <div>
+    <h1>Language</h1>
+      <mat-checkbox class="example-margin" >English</mat-checkbox>
+      <mat-checkbox class="example-margin" >Spanish</mat-checkbox>
+      <mat-checkbox class="example-margin" >Mandarin</mat-checkbox>
+      <mat-checkbox class="example-margin" >French</mat-checkbox>
+      <mat-checkbox class="example-margin" >Japanese</mat-checkbox>
+      <mat-checkbox class="example-margin" >Portuguese</mat-checkbox>
+      <mat-checkbox class="example-margin" >German</mat-checkbox>
+    
   </div>
   <div class="buttons">
     <button mat-button>Register</button>

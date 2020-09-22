@@ -26,6 +26,7 @@ import { CardComponent } from './UI/card/card.component';
 import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.component';
 import { ModelComponent } from './Pages/model/model.component';
 import { ModelListComponent } from './UI/model-list/model-list.component';
+import { HourComponent } from './UI/hour/hour.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ModelListComponent } from './UI/model-list/model-list.component';
     CardComponent,
     TeatcherListComponent,
     ModelComponent,
-    ModelListComponent
+    ModelListComponent,
+    HourComponent
   ],
   imports: [
     BrowserModule,
