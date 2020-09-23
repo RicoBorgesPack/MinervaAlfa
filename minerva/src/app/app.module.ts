@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './UI/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Pages/home/home.component';
-import { TeatcherComponent } from './Pages/teatcher/teatcher.component';
+import { TeacherFormComponent } from './Pages/teatcher/teatcher.component';
 import { CarrouselComponent } from './UI/carrousel/carrousel.component';
 import { ClassesComponent } from './Pages/classes/classes.component';
 import { CardComponent } from './UI/card/card.component';
@@ -34,7 +34,7 @@ import { HourComponent } from './UI/hour/hour.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    TeatcherComponent,
+    TeacherFormComponent,
     CarrouselComponent,
     ClassesComponent,
     CardComponent,
