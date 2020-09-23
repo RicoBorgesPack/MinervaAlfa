@@ -18,23 +18,24 @@ input, textarea, button{
 }
 .container {
   display: flex;
-  height: 320px;
+  height: 450px;
   margin: 0 auto;
   width: 880px;
 }
 .left {
   background: white;
-  height: calc(100% - 40px);
+  height: 450px;
   top: 20px;
   position: relative;
-  width: 50%;
+  width: 10%;
 }
 .right {
   background: #93a2f5;
   color: #F1F1F2;
   position: relative;
-  width: 100%;
+  width: 75%;
   margin-left: -15px;
+  margin-right: 25px;
   padding: 20px;
 }
 .example-margin{

@@ -5,6 +5,7 @@ import {AngularFireModule} from '@angular/fire';
 import{AngularFirestoreModule} from '@angular/fire/firestore';
 import{environment} from '../environments/environment'
 import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule, MatCard} from '@angular/material/card';
@@ -53,7 +54,8 @@ import { HourComponent } from './UI/hour/hour.component';
     MatInputModule,
     MatSelectModule,
     ReactiveFormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
