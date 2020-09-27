@@ -28,6 +28,7 @@ import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.componen
 import { ModelComponent } from './Pages/model/model.component';
 import { ModelListComponent } from './UI/model-list/model-list.component';
 import { HourComponent } from './UI/hour/hour.component';
+import { PostboxComponent } from './UI/postbox/postbox.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HourComponent } from './UI/hour/hour.component';
     TeatcherListComponent,
     ModelComponent,
     ModelListComponent,
-    HourComponent
+    HourComponent,
+    PostboxComponent
   ],
   imports: [
     BrowserModule,
