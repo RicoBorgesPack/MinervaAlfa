@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule, MatCard} from '@angular/material/card';
-import {MatButton, MatButtonModule} from '@angular/material/button';
+import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
@@ -58,6 +58,8 @@ import { PostboxComponent } from './UI/postbox/postbox.component';
     ReactiveFormsModule,
     MatCheckboxModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

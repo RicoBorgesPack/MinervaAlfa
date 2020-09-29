@@ -4,22 +4,23 @@
     <mat-card-subtitle><h1>Just respond this form</h1></mat-card-subtitle>
   </mat-card-header>
   <mat-card-content> 
+    <form [formGroup]="this.form">
   <div class="right">
-  
+  <!--formControlName=""-->
   <div>
-  <input mat-input type="text" name="username" placeholder="Username" autocomplete="off">
+  <input mat-input type="text" name="username" placeholder="Username" formControlName="Username" autocomplete="off">
   </div>
   <div>
-  <input mat-input type="email" name="email" placeholder="email" autocomplete="on">
+  <input mat-input type="email" name="email" placeholder="email" formControlName="email" autocomplete="on">
   </div>
   <div>
-    <input mat-input type="tel" name="wpp" placeholder="wpp" autocomplete="on">
+    <input mat-input type="tel" name="wpp" placeholder="wpp" formControlName="wpp" autocomplete="on">
   </div>
   <div>
-    <textarea name="bio" id="bio" placeholder="Write your bio"  required></textarea>
+    <textarea name="bio" id="bio" placeholder="Write your bio" formControlName="bio" required></textarea>
   </div>
   <div>
-    <input mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" autocomplete="on">
+    <input mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" formControlName="perhour" autocomplete="on">
   </div>
   <div class="select-block">
     <h1>Weekday</h1>
@@ -43,8 +44,9 @@
     
   </div>
   <div class="buttons">
-    <button mat-button>Register</button>
+    <button mat-button (click)="onSubmit()">Submit</button>
   </div>
 </div>
+</form>
 </mat-card-content>
 </mat-card>
