@@ -21,7 +21,7 @@ export class TeacherFormComponent implements OnInit {
   constructor(private firestore: AngularFirestore) { }
 
   ngOnInit(): void {
-    this.firestore.collection('Techer').add({field:this.form})
+    this.firestore.collection('Teacher').add({field:this.form})
     
   }
   onSubmit() {
