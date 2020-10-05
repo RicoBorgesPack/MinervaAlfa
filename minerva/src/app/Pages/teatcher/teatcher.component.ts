@@ -24,6 +24,7 @@ export class TeacherFormComponent implements OnInit {
     
   }
   onSubmit() {
+    /*
     this.firestore.collection('Teacher').add({...form.value})
     .then(res => { // res here, is the document reference;
         this.firestore.collection('Teacher').doc(res.id).update({id: docRef.id}); // Do this to keep the id in the document, it´s usefull to further edition. 
@@ -32,19 +33,7 @@ export class TeacherFormComponent implements OnInit {
     })
     .catch(e => {
         console.log(e);
-    })
-    
-    /*this.firestore.collection('Teacher').add({
-      field: this.form
-        //field: this.form.value.new,
-    })
-    .then(res => {
-        console.log(res);
-        this.form.reset();
-    })
-    .catch(e => {
-        console.log(e);
-    })
-}*/
+    })*/
+  }
 
 }

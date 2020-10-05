@@ -29,6 +29,7 @@ import { ModelComponent } from './Pages/model/model.component';
 import { ModelListComponent } from './UI/model-list/model-list.component';
 import { HourComponent } from './UI/hour/hour.component';
 import { PostboxComponent } from './UI/postbox/postbox.component';
+import { CameraComponent } from './UI/camera/camera.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PostboxComponent } from './UI/postbox/postbox.component';
     ModelComponent,
     ModelListComponent,
     HourComponent,
-    PostboxComponent
+    PostboxComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,
