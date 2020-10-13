@@ -1,30 +1,56 @@
 {
-    "Class" : {
-        "PaulBernardo":{
-      "Duration" : {
-        "Begin" : "09/11/20 14:00",
-        "End" : "09/11/20 16:00"
+  "Class": {
+    "PaulBernardo": {
+      "Duration": {
+        "Begin": "09/11/20 14:00",
+        "End": "09/11/20 16:00"
       },
-      "Language" : "Japanese",
-      "Obs" : "Lorem Ipsum",
-      "Student" : "Paul Kotaka",
-      "StudentWpp" : 193039039,
-      "Teacher" : "Bernardo Hiraki"
-    }},
-    "Teacher" : {
-        "Bernardo":{
-      "Bio" : "Lorem ipsum",
-      "Disponibility" : {
-        "from" : 10,
-        "to" : 17
+      "Language": "Japanese",
+      "Obs": "Lorem Ipsum",
+      "Student": "Paul Kotaka",
+      "StudentWpp": 193039039,
+      "Teacher": "Bernardo Hiraki"
+    }
+  },
+  "Teacher": [
+    {
+      "id":"100",
+      "name": "Bernardo Hiraki",
+      "Bio": "Lorem ipsum",
+      "Disponibility": {
+        "from": 10,
+        "to": 17
       },
-      "Nationality" : "Brazilian",
-      "Weekdays" : {
-        "day" : "fri"
-      },
-      "img" : "https://cdn.theatlantic.com/assets/media/img/nj/2016/1/26/asian-americans-feel-held/jason-shen-headshot.jpg",
-      "name" : "Bernardo Hiraki",
-      "per hour" : 25,
-      "wpp" : 1994592763
-    }}
-  }
+      "Language": [
+        "Portugese",
+        "Japanese",
+        "English"
+      ],
+      "Nationality": "Brazilian",
+      "Weekdays": [
+        "mon",
+        "tue",
+        "thu",
+        "fri"
+      ],
+      "img": "https://cdn.theatlantic.com/assets/media/img/nj/2016/1/26/asian-americans-feel-held/jason-shen-headshot.jpg",
+      "per hour": 25,
+      "wpp": 18033913
+    },
+     {
+      "id":"200",
+      "name": "Giovanni Malone",
+       "Bio": "Lorem ipsum",
+       "Disponibility": {
+         "from": 14,
+         "to": 19
+       },
+       "Language":["Italian","English"],
+       "Nationality": "Italian",
+       "Weekdays":["mon","tue","thu","fri"],
+       "img": "https://www.superprof.us/images/teachers/teacher-home-friendly-italian-guy-new-california-gives-italian-lessons-everybody.jpg",
+       "per hour": 22,
+       "wpp": 101330930
+     }
+    ]
+}

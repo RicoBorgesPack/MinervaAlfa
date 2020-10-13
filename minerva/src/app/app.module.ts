@@ -2,10 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {AngularFireModule} from '@angular/fire';
-import{AngularFirestoreModule} from '@angular/fire/firestore';
 import{environment} from '../environments/environment'
-import { ReactiveFormsModule } from "@angular/forms";
-import { FormsModule } from '@angular/forms';
+import { HttpBackend, HttpClientModule } from '@angular/common/http';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule, MatCard} from '@angular/material/card';
@@ -57,11 +55,9 @@ import { CameraComponent } from './UI/camera/camera.component';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    ReactiveFormsModule,
     MatCheckboxModule,
-    FormsModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
