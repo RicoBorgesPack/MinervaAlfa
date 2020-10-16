@@ -5,7 +5,6 @@
 }
 
 .example-header-image {
-  background-image: url('https://cdn.theatlantic.com/assets/media/img/nj/2016/1/26/asian-americans-feel-held/jason-shen-headshot.jpg');
   background-size: cover;
 }
 p{
@@ -15,4 +14,7 @@ p{
 button{
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+}
+mat-card-content{
+  margin-top: 5px;
 }

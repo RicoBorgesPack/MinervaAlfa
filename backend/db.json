@@ -34,7 +34,7 @@
         "fri"
       ],
       "img": "https://cdn.theatlantic.com/assets/media/img/nj/2016/1/26/asian-americans-feel-held/jason-shen-headshot.jpg",
-      "per hour": 25,
+      "perhour": 25,
       "wpp": 18033913
     },
      {
@@ -49,7 +49,7 @@
        "Nationality": "Italian",
        "Weekdays":["mon","tue","thu","fri"],
        "img": "https://www.superprof.us/images/teachers/teacher-home-friendly-italian-guy-new-california-gives-italian-lessons-everybody.jpg",
-       "per hour": 22,
+       "perhour": 22,
        "wpp": 101330930
      }
     ]

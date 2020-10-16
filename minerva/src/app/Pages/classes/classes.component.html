@@ -1,19 +1,27 @@
 <div class="all">
-  <div class="cards">
+  <div class="cards"
+   *ngFor="let teacher of teacher$ | async">
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar class="example-header-image">
+          <img src="{{teacher.img}}" width="150px" height="150px">
         </div>
-        <mat-card-title>Paul</mat-card-title>
-        <mat-card-subtitle>Kozaki</mat-card-subtitle>
+        <mat-card-title><p>{{teacher.name}}</p></mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>Language:English
-        </p><br>
-        <p >
-          Hi, im Kozaki a Canadian-japanese teacher of English, French and Japanese,
+        <p>
+          Nationality:
+          {{teacher.Nationality}}
         </p>
-        <p>Value per Hour:25USD</p>
+        <p>Languages: {{teacher.Language}}
+        </p><br>
+        <p>
+         Bio: {{teacher.Bio}}
+        </p><br>
+        <p>
+          Disponibilty:{{teacher.Weekdays}}
+        </p>
+        <p>Values:{{teacher.perhour}} per hour</p>
 
       </mat-card-content>
       <mat-card-actions>
