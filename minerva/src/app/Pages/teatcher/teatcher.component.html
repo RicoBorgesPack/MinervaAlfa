@@ -35,18 +35,30 @@
       <mat-checkbox class="example-margin" >Thu</mat-checkbox>
       <mat-checkbox class="example-margin" >Fri</mat-checkbox>
     </section>
+    <input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Google Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
   </div>
   <div>
     <h1>Language</h1>
-    <section [(ngModel)]="teacher.Language">
-      <mat-checkbox class="example-margin" >English</mat-checkbox>
-      <mat-checkbox class="example-margin" >Spanish</mat-checkbox>
-      <mat-checkbox class="example-margin" >Mandarin</mat-checkbox>
-      <mat-checkbox class="example-margin" >French</mat-checkbox>
-      <mat-checkbox class="example-margin" >Japanese</mat-checkbox>
-      <mat-checkbox class="example-margin" >Portuguese</mat-checkbox>
-      <mat-checkbox class="example-margin" >German</mat-checkbox>
-    </section>
+    <input [(ngModel)]="teacher.Language">
+    <datalist id="Language">
+      <option value="English">
+      <option value="Spanish">
+      <option value="Chinese">
+      <option value="French">
+      <option value="Portugese">
+      <option value="Japanese">
+      <option value="Italian">
+      <option value="German">
+    </datalist>
+  </input>
   </div>
   <div class="buttons">
     <button mat-button (click)="onSubmit()">Submit</button>

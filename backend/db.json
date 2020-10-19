@@ -20,11 +20,8 @@
       "Bio": "Lorem ipsum",
       "from": 10,
       "to": 17,
-      "Language": [
-        "Portugese",
+      "Language":
         "Japanese",
-        "English"
-      ],
       "Nationality": "Brazilian",
       "Weekdays": [
         "mon",
@@ -43,7 +40,7 @@
        "email":"GevanniM2000@gmail.com",
        "from": 14,
       "to": 19,
-       "Language":["Italian","English"],
+       "Language":"Italian",
        "Nationality": "Italian",
        "Weekdays":["mon","tue","thu","fri"],
        "img": "https://www.superprof.us/images/teachers/teacher-home-friendly-italian-guy-new-california-gives-italian-lessons-everybody.jpg",
