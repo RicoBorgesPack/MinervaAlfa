@@ -13,6 +13,7 @@ export class TeacherFormComponent implements OnInit {
   constructor(private configService: ConfigService) { }
 
   ngOnInit(): void {
+    this.refresh();
     
   }
   refresh() {

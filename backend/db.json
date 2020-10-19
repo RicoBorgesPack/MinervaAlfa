@@ -14,14 +14,13 @@
   },
   "Teacher": [
     {
-      "id":100,
+      "id": 100,
       "name": "Bernardo Hiraki",
-      "email":"brhiraki@gmail.com",
+      "email": "brhiraki@gmail.com",
       "Bio": "Lorem ipsum",
       "from": 10,
       "to": 17,
-      "Language":
-        "Japanese",
+      "Language": "Japanese",
       "Nationality": "Brazilian",
       "Weekdays": [
         "mon",
@@ -33,19 +32,24 @@
       "perhour": 25,
       "wpp": 18033913
     },
-     {
-      "id":200,
+    {
+      "id": 200,
       "name": "Giovanni Malone",
-       "Bio": "Lorem ipsum",
-       "email":"GevanniM2000@gmail.com",
-       "from": 14,
+      "Bio": "Lorem ipsum",
+      "email": "GevanniM2000@gmail.com",
+      "from": 14,
       "to": 19,
-       "Language":"Italian",
-       "Nationality": "Italian",
-       "Weekdays":["mon","tue","thu","fri"],
-       "img": "https://www.superprof.us/images/teachers/teacher-home-friendly-italian-guy-new-california-gives-italian-lessons-everybody.jpg",
-       "perhour": 22,
-       "wpp": 101330930
-     }
-    ]
+      "Language": "Italian",
+      "Nationality": "Italian",
+      "Weekdays": [
+        "mon",
+        "tue",
+        "thu",
+        "fri"
+      ],
+      "img": "https://www.superprof.us/images/teachers/teacher-home-friendly-italian-guy-new-california-gives-italian-lessons-everybody.jpg",
+      "perhour": 22,
+      "wpp": 101330930
+    }
+  ]
 }

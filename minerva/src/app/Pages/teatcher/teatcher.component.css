@@ -12,7 +12,7 @@ h1{
 	font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 }
-input, textarea, button{
+input, textarea, button, p{
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 }
@@ -41,4 +41,10 @@ input, textarea, button{
 .example-margin{
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+}
+.select-block > input{
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  margin:auto;
 }
