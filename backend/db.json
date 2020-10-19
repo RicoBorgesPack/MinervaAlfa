@@ -14,7 +14,7 @@
   },
   "Teacher": [
     {
-      "id":"100",
+      "id":100,
       "name": "Bernardo Hiraki",
       "Bio": "Lorem ipsum",
       "Disponibility": {
@@ -38,7 +38,7 @@
       "wpp": 18033913
     },
      {
-      "id":"200",
+      "id":200,
       "name": "Giovanni Malone",
        "Bio": "Lorem ipsum",
        "Disponibility": {
