@@ -1,8 +1,10 @@
 export class Teacher {
     id: number;
     name:string;
+    email:string;
     bio:string;
-    disponibility = new Map();
+    disponibilityTo: number;
+    disponibilityFrom:number;
     language:string[];
     nationality:string;
     weekdays:string[];

@@ -6,23 +6,29 @@
   <mat-card-content> 
   <div class="right">
   <div>
-  <input mat-input type="text" name="username" placeholder="Username" autocomplete="off">
+  <input [(ngModel)]="teacher.name" mat-input type="text" name="username" placeholder="Username" autocomplete="off">
   </div>
   <div>
-  <input mat-input type="email" name="email" placeholder="email"  autocomplete="on">
+  <input [(ngModel)]="teacher.email" mat-input type="email" name="email" placeholder="email"  autocomplete="on">
   </div>
   <div>
-    <input mat-input type="tel" name="wpp" placeholder="wpp"  autocomplete="on">
+    <input [(ngModel)]="teacher.wpp" mat-input type="tel" name="wpp" placeholder="wpp"  autocomplete="on">
   </div>
   <div>
-    <textarea name="bio" id="bio" placeholder="Write your bio"  required></textarea>
+    <textarea [(ngModel)]="teacher.bio" name="bio" id="bio" placeholder="Write your bio"  required></textarea>
   </div>
   <div>
-    <input mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" autocomplete="on">
+    <input [(ngModel)]="teacher.perhour" mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" autocomplete="on">
+  </div>
+  <div>
+    <input [(ngModel)]="teacher.disponibilityTo"mat-input type="number" min="1" max="24" step="any"name="To" placeholder="To" autocomplete="on">
+  </div>
+  <div>
+    <input [(ngModel)]="teacher.disponibilityFrom"mat-input type="number" min="1" max="24" step="any"name="From" placeholder="From" autocomplete="on">
   </div>
   <div class="select-block">
     <h1>Weekday</h1>
-    <section>
+    <section [(ngModel)]="teacher.Weekday">
       <mat-checkbox class="example-margin" >Mon</mat-checkbox>
       <mat-checkbox class="example-margin" >Tue</mat-checkbox>
       <mat-checkbox class="example-margin" >Wed</mat-checkbox>
@@ -32,6 +38,7 @@
   </div>
   <div>
     <h1>Language</h1>
+    <section [(ngModel)]="teacher.Language">
       <mat-checkbox class="example-margin" >English</mat-checkbox>
       <mat-checkbox class="example-margin" >Spanish</mat-checkbox>
       <mat-checkbox class="example-margin" >Mandarin</mat-checkbox>
@@ -39,7 +46,7 @@
       <mat-checkbox class="example-margin" >Japanese</mat-checkbox>
       <mat-checkbox class="example-margin" >Portuguese</mat-checkbox>
       <mat-checkbox class="example-margin" >German</mat-checkbox>
-    
+    </section>
   </div>
   <div class="buttons">
     <button mat-button (click)="onSubmit()">Submit</button>

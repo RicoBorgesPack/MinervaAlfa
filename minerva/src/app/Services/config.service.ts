@@ -14,11 +14,15 @@ export class ConfigService {
   constructor(private http: HttpClient) {
     
    }
-   addPerson(teacher:Teacher): Observable<any> {
+   addTeacher(teacher:Teacher): Observable<any> {
     const headers = { 'content-type': 'application/json'}  
     const body=JSON.stringify(teacher);
     console.log(body)
-    return this.http.post(this.baseURL + 'people', body,{'headers':headers})
+    return this.http.post(this.baseURL + 'teacher', body,{'headers':headers})
+  }
+  getTeachers(): Observable<Teacher[]> {
+    console.log('getTeacher '+this.baseURL + 'teacher')
+    return this.http.get<Teacher[]>(this.baseURL + 'teacher')
   }
    
 }

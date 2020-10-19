@@ -16,11 +16,10 @@
     {
       "id":100,
       "name": "Bernardo Hiraki",
+      "email":"brhiraki@gmail.com",
       "Bio": "Lorem ipsum",
-      "Disponibility": {
-        "from": 10,
-        "to": 17
-      },
+      "from": 10,
+      "to": 17,
       "Language": [
         "Portugese",
         "Japanese",
@@ -41,10 +40,9 @@
       "id":200,
       "name": "Giovanni Malone",
        "Bio": "Lorem ipsum",
-       "Disponibility": {
-         "from": 14,
-         "to": 19
-       },
+       "email":"GevanniM2000@gmail.com",
+       "from": 14,
+      "to": 19,
        "Language":["Italian","English"],
        "Nationality": "Italian",
        "Weekdays":["mon","tue","thu","fri"],

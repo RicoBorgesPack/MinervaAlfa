@@ -1,39 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { FormControl, FormGroup } from "@Angular/forms";
-
+import {ConfigService} from 'src/app/Services/config.service'
+import {Teacher} from 'src/app/Model/teacher'
 @Component({
   selector: 'app-teatcher',
   templateUrl: './teatcher.component.html',
   styleUrls: ['./teatcher.component.css']
 })
 export class TeacherFormComponent implements OnInit {
-  form = new FormGroup({
-      Username: new FormControl(''),
-      email: new FormControl(''),
-      wpp: new FormControl(''),
-      bio: new FormControl(''),
-      perhour: new FormControl(''),
-      completed: new FormControl(false)
-      //new: new FormControl(''),
-  })
+  teacher = new Teacher();
+  teachers:Teacher[];
 
-  constructor(private firestore: AngularFirestore) { }
+  constructor(private configService: ConfigService) { }
 
   ngOnInit(): void {
     
   }
+  refresh() {
+    this.configService.getTeachers()
+      .subscribe(data => {
+        console.log(data)
+        this.teachers=data;
+      })      
+ 
+  }
   onSubmit() {
-    /*
-    this.firestore.collection('Teacher').add({...form.value})
-    .then(res => { // res here, is the document reference;
-        this.firestore.collection('Teacher').doc(res.id).update({id: docRef.id}); // Do this to keep the id in the document, it´s usefull to further edition. 
-        console.log(res);
-        this.form.reset();
-    })
-    .catch(e => {
-        console.log(e);
-    })*/
+    this.configService.addTeacher(this.teacher)
+      .subscribe(data => {
+        console.log(data)
+        this.refresh();
+      })      
   }
 
 }
