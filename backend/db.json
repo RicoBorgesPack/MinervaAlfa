@@ -1,17 +1,19 @@
 {
-  "Class": {
-    "PaulBernardo": {
-      "Duration": {
-        "Begin": "09/11/20 14:00",
-        "End": "09/11/20 16:00"
-      },
-      "Language": "Japanese",
-      "Obs": "Lorem Ipsum",
-      "Student": "Paul Kotaka",
-      "StudentWpp": 193039039,
-      "Teacher": "Bernardo Hiraki"
+  "Class": [
+    {
+      "PaulBernardo": {
+        "Duration": {
+          "Begin": "09/11/20 14:00",
+          "End": "09/11/20 16:00"
+        },
+        "Language": "Japanese",
+        "Obs": "Lorem Ipsum",
+        "Student": "Paul Kotaka",
+        "StudentWpp": 193039039,
+        "Teacher": "Bernardo Hiraki"
+      }
     }
-  },
+  ],
   "Teacher": [
     {
       "id": 100,
@@ -61,6 +63,18 @@
       "disponibilityTo": 10,
       "disponibilityFrom": 17,
       "id": 201
+    },
+    {
+      "name": "Donkey Kong",
+      "email": "DKdonkey@banana.com",
+      "img": "https://img.olhardigital.com.br/uploads/acervo_imagens/2014/07/r16x9/20140710114451_1200_675_-_donkey_kong.jpg",
+      "wpp": "198989",
+      "bio": "Want Banana Get Banana",
+      "perhour": 32,
+      "disponibilityTo": 14,
+      "disponibilityFrom": 17,
+      "id": 202
     }
-  ]
+  ],
+  "Post": []
 }

@@ -29,52 +29,23 @@
   <div>
     <input [(ngModel)]="teacher.disponibilityFrom"mat-input type="number" min="1" max="24" step="any"name="From" placeholder="From" autocomplete="on">
   </div>
-  <div [(ngModel)]="teacher.weekdays" class="select-block">
-    <h1>Weekday</h1>
-      <p>Mon</p>
-      <input type="checkbox" mat-checkbox class="example-margin" text="Mon" >
-      <p>tue</p>
-      <input type="checkbox" mat-checkbox class="example-margin" text="Tue">
-      <p>Wed</p>
-      <input type="checkbox" mat-checkbox class="example-margin" text="Wed">
-      <p>Thu</p>
-      <input type="checkbox" mat-checkbox class="example-margin" text="Thu">
-      <p>Fri</p>
-      <input type="checkbox" mat-checkbox class="example-margin" text="Fri"></div>
-  <div [(ngModel)]="teacher.language">
-    <h1>Language</h1>
+  <div>
+      <mat-checkbox [(ngModel)]="teacher.weekdays" class="example-margin" >Mon</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.weekdays" class="example-margin" >Tue</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.weekdays" class="example-margin" >Wed</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.weekdays" class="example-margin" >Wed</mat-checkbox>  
+  </div>
       <div>
-        <p>English</p>
-        <input type="radio" class="example-margin" name="lang">
-      </div>
-      <div>
-        <p>Spanish</p>
-        <input type="radio" class="example-margin" name="lang">
-      </div>
-      <div>
-        <p>Chinese</p>
-        <input type="radio" class="example-margin" name="lang">
-      </div>
-      <div>
-        <p>French</p>
-        <input type="radio" mat-checkbox class="example-margin" name="lang">
-      </div>
-      <div>
-        <p>Portugese</p>
-        <input type="radio" mat-checkbox class="example-margin"name="lang" ></div>
-    </div>
-    <div>
-      <p>German</p>
-      <input type="radio" class="example-margin" name="lang">
-    </div>
-    <div>
-      <p>Italian</p>
-      <input type="radio" class="example-margin" name="lang">
-    </div>
-    <div>
-      <p>Japanese</p>
-      <input type="radio" class="example-margin" name="lang">
-    </div>
+  <section>
+      <mat-checkbox [(ngModel)]="teacher.language" class="example-margin" name='lang'>English</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.language" class="example-margin" name='lang'>Spanish</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.language" class="example-margin" name='lang'>Mandarin</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.language" class="example-margin" name='lang'>Japanese</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.language" class="example-margin" name='lang'>Portuguese</mat-checkbox>
+      <mat-checkbox [(ngModel)]="teacher.language" class="example-margin" name='lang'>German</mat-checkbox>
+    
+    </section>
+  </div>
   <div class="buttons">
     <button mat-button (click)="onSubmit()">Submit</button>
   </div>
