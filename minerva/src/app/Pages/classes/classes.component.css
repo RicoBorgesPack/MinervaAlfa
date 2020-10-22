@@ -10,6 +10,7 @@
 p{
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+  font: blue;
 }
 button{
   font-family: 'opendyslexic';

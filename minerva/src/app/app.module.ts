@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import {AngularFireModule} from '@angular/fire';
 import{environment} from '../environments/environment'
@@ -23,10 +23,7 @@ import { TeacherFormComponent } from './Pages/teatcher/teatcher.component';
 import { CarrouselComponent } from './UI/carrousel/carrousel.component';
 import { ClassesComponent } from './Pages/classes/classes.component';
 import { FeedComponent } from './UI/card/card.component';
-import { TeatcherListComponent } from './UI/teatcher-list/teatcher-list.component';
 import { ModelComponent } from './Pages/model/model.component';
-import { ModelListComponent } from './UI/model-list/model-list.component';
-import { HourComponent } from './UI/hour/hour.component';
 import { PostboxComponent } from './UI/postbox/postbox.component';
 import { CameraComponent } from './UI/camera/camera.component';
 
@@ -39,10 +36,7 @@ import { CameraComponent } from './UI/camera/camera.component';
     CarrouselComponent,
     ClassesComponent,
     FeedComponent,
-    TeatcherListComponent,
     ModelComponent,
-    ModelListComponent,
-    HourComponent,
     PostboxComponent,
     CameraComponent
   ],
@@ -62,6 +56,7 @@ import { CameraComponent } from './UI/camera/camera.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
