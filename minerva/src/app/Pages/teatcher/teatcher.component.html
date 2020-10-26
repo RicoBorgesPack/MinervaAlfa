@@ -30,46 +30,15 @@
     <input [(ngModel)]="teacher.disponibilityFrom"mat-input type="number" min="1" max="24" step="any"name="From" placeholder="From" autocomplete="on">
   </div>
   <div>
-    <mat-checkbox  class="example-margin" text="Mon">
-    <mat-checkbox  class="example-margin" text="Tue">
-    <mat-checkbox  class="example-margin" text="Wed">
-    <mat-checkbox  class="example-margin" text="Thu">
-    <mat-checkbox  class="example-margin" text="Fri">
+    <mat-checkbox  class="example-margin" text="Mon"></mat-checkbox>
+    <mat-checkbox  class="example-margin" text="Tue"></mat-checkbox>
+    <mat-checkbox  class="example-margin" text="Wed"></mat-checkbox>
+    <mat-checkbox  class="example-margin" text="Thu"></mat-checkbox>
+    <mat-checkbox  class="example-margin" text="Fri"></mat-checkbox>
   </div>
-  <div>
-  <div>
-    <p>English</p>
-    <input type="radio" class="example-margin" name="lang">
-  </div>
-  <div>
-    <p>Spanish</p>
-    <input type="radio" class="example-margin" name="lang">
-  </div>
-  <div>
-    <p>Chinese</p>
-    <input type="radio" class="example-margin" name="lang">
-  </div>
-  <div>
-    <p>French</p>
-    <input type="radio" mat-checkbox class="example-margin" name="lang">
-  </div>
-  <div>
-    <p>Portugese</p>
-    <input type="radio" mat-checkbox class="example-margin"name="lang" >
-</div>
-<div>
-  <p>German</p>
-  <input type="radio" class="example-margin" name="lang">
-</div>
-<div>
-  <p>Italian</p>
-  <input type="radio" class="example-margin" name="lang">
-</div>
-<div>
-  <p>Japanese</p>
-  <input type="radio" class="example-margin" name="lang">
-</div>
-</div>
+   <div>
+    <input [(ngModel)]="teacher.language" mat-input type="text" name="language" placeholder="Insert your language" autocomplete="off">
+    </div>
   <div class="buttons">
     <button mat-button (click)="onSubmit()">Submit</button>
   </div>
