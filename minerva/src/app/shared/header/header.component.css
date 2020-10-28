@@ -101,4 +101,5 @@ header {
         margin-bottom: 0px;
         background: #93D2F5;
         border-radius: 5px;
+        max-width: auto;
     }
