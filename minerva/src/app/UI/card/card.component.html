@@ -1,21 +1,22 @@
-<div>
+<div *ngFor="let post of post$ | async">
 <mat-card >
   <app-postbox></app-postbox>
 </mat-card>
-</div>
+
 <mat-card class="example-card">
   
     <mat-card-header>
-      <mat-card-title>}</mat-card-title>
-      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-title><p>{{post.Title}}</p></mat-card-title>
+      <mat-card-subtitle><p>{{post.userPost}}</p></mat-card-subtitle>
     </mat-card-header>
 
     <mat-card-content>
       <p>
-        
+        {{post.Content}}
       </p>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>LIKE</button>
     </mat-card-actions>
   </mat-card>
+</div>

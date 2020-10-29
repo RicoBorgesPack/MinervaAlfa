@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class FeedComponent implements OnInit {
-
+post$ = this.http.get('http://localhost:3000/Post');
   constructor(private http: HttpClient) { }
-  post$ = this.http.get('http://localhost:3000/Posts');
+  
 
   ngOnInit(): void {
   }
