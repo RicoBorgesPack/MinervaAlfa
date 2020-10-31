@@ -5,6 +5,7 @@ import {AngularFireModule} from '@angular/fire';
 import{environment} from '../environments/environment'
 import { HttpBackend, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
+import {WebcamModule} from 'ngx-webcam';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule, MatCard} from '@angular/material/card';
@@ -52,8 +53,8 @@ import { CameraComponent } from './UI/camera/camera.component';
     MatSelectModule,
     MatCheckboxModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    FormsModule
+    FormsModule,
+    WebcamModule
   ],
   providers: [],
   bootstrap: [AppComponent],

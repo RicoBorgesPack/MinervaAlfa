@@ -1,6 +1,10 @@
 
 <div id="app">
-  <div><video #video id="video" width="640" height="480" autoplay></video></div>
+  <div>
+    <webcam>
+    <video #video id="video" width="640" height="480" autoplay></video>
+  </webcam>
+</div>
   <div><button id="snap" (click)="capture()">Snap Photo</button></div>
   <canvas #canvas id="canvas" width="640" height="480"></canvas>
   <ul>
