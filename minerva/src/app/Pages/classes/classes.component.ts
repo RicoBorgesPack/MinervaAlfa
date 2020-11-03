@@ -17,6 +17,7 @@ export class ClassesComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  /*
   getLinkWhastapp(number, message) {
     var url = 'https://api.whatsapp.com/send?phone=' 
        + number 
@@ -25,6 +26,7 @@ export class ClassesComponent implements OnInit {
   
     return url}
     onsubmit(){
-      const contact = (document.getElementById(this.teacher)as any).value;
-    }
+    const contact = (document.getElementById(this.teacher.id)as any).value;
+
+    }*/
 }
