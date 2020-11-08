@@ -28,7 +28,10 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button (click)="onsubmit()">Contact</button>
+        <button mat-button (click)="onsubmit()"> 
+          <a href="https://api.whatsapp.com/send?l=pt_BR&phone=55{{teacher.wpp}}&
+          text=Tenho interesse na sua aula aula de {{teacher.Language}} {{teacher.name}}">
+      Contact</button>
       </mat-card-actions>
     </mat-card>
 </div>
