@@ -12,10 +12,13 @@ p{
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
   font: blue;
 }
-button{
+button {
   font-family: 'opendyslexic';
   src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 }
 mat-card-content{
   margin-top: 5px;
+}
+a{
+  text-decoration: none;
 }
