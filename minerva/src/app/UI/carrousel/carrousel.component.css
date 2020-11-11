@@ -54,17 +54,8 @@
     src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     margin-top: 0;  
   }
-  .carrousel li q {
-    font-family: 'opendyslexic';
-    src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
-    max-width: 90%;
-    margin: auto;
-    color: #93D2F5;
-    font-size: 25px;
-    font-weight: bold;
-  }
   .carrousel li img {
-    width: 250px;
+    width: 450px;
     max-height: 450px;
     object-fit: cover;
     margin-left: -1.5em;
@@ -121,6 +112,7 @@
   #radio-4:checked ~ .slides {
     transform: translateX(-75%);
   }
+  
   
   
   .carrousel .slidesNavigation label:hover {
