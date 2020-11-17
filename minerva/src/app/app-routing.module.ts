@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'study', component:  ClassesComponent},
   { path: 'feed', component:  FeedComponent},
   { path: 'cmr', component:  CameraComponent},
-  { path:'model', component: ModelComponent}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
