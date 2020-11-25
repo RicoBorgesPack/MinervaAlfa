@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'teach', component: TeacherFormComponent },
   { path: 'study', component:  ClassesComponent},
   { path: 'feed', component:  FeedComponent},
-  { path: 'cmr', component:  CameraComponent},
+  { path: 'model', component:  ModelComponent},
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
