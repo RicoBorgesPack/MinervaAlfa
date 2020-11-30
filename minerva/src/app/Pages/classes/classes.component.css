@@ -1,127 +1,24 @@
-mat-card {
-  width: 1200px;
-  margin: 8px; 
-}
-
-mat-card-content {
-  display: flex;
-  box-sizing: border-box;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-size: 14px;
-}
-
-.col1 {
-  display: grid;
-  width: 25%;
-  text-align: center; 
-}
-
-.col2 {
-  display: grid;
-  width: auto;
-  min-height: 190px;
-  width: 40%;
-  position: relative;
-  padding: 25px 25px 20px;
-  min-height: 284px;
-  border-radius: 6px;
-  background: #fff;
-  font-size: 23px;
+.example-card {
   font-family: 'opendyslexic';
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+  max-width: 400px;
 }
-.col3 {
-  display: grid;
-  min-height: 190px;
-  width: 40%;
-  text-align: center;
-  padding: 25px 20px 20px;
+
+.example-header-image {
+  background-size: cover;
+}
+p{
   font-family: 'opendyslexic';
-  border-radius: 0 4px 4px 0;
-  background: #fff;
-
-  
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+  font: blue;
 }
-.bio {
+button {
   font-family: 'opendyslexic';
-  text-align: justify;
-  font-size: 16px;
-  padding: 0 10px 10px;
-  font-weight: 300;
-  color: #777;
-  line-height: 1.57;
-  word-wrap: break-word;
+  src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 }
-img    {
-  border-radius: 50%;
-  width: 170px;
-  height: 170px;
-  margin-left: auto;
-  margin-right: auto;
-
+mat-card-content{
+  margin-top: 5px;
 }
-
-.col1 h3{
-  
-  font-family: 'opendyslexic';
-  text-align: center; 
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-size: 28px;
-  font-weight: 400;
+a{
+  text-decoration: none;
 }
-
-b {
-  font-family: 'opendyslexic';
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 18px;
-  color: #777;
-  text-transform: uppercase;
-}
-
-p {
-  font-family: 'opendyslexic';
-  text-align: center; 
-  color: rgb(51, 51, 51);
-  font-size: 23px;
-}
-
-.div {
-  margin: 12px 0;
-  width: 50px;
-  height: 2px;
-  border-radius: 1px;
-  background:  #09b8e4;
-}
-.reta {
-  content: " ";
-  width: 1px;
-  position: absolute;
-  top: 24px;
-  bottom: 24px;
-  background-color:   #09b8e4;
-  right: 0;
-}
-
-.bt {
-  border:1px solid #09b8e4;
-  border-radius:10px;
-  display:inline-block;
-  cursor:pointer;
-  font-family:Verdana;
-  font-weight:bold;
-  font-size:13px;
-  padding:6px 10px;
-  text-decoration:none;
-  } 
-  
-
-  .pai {
-      display: flex;
-      width: 100%;
-   
-      justify-content: center;
-      height: auto;
-      flex-wrap: wrap;
-  }
