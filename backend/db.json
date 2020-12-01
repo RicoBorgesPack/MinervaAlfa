@@ -1,19 +1,4 @@
 {
-  "Class": [
-    {
-      "PaulBernardo": {
-        "Duration": {
-          "Begin": "09/11/20 14:00",
-          "End": "09/11/20 16:00"
-        },
-        "Language": "Japanese",
-        "Obs": "Lorem Ipsum",
-        "Student": "Paul Kotaka",
-        "StudentWpp": 193039039,
-        "Teacher": "Bernardo Hiraki"
-      }
-    }
-  ],
   "Teacher": [
     {
       "id": 100,
@@ -40,25 +25,6 @@
       "img": "https://www.superprof.us/images/teachers/teacher-home-friendly-italian-guy-new-california-gives-italian-lessons-everybody.jpg",
       "perhour": 22,
       "wpp": 101330930
-    },
-    {
-      "name": "Donkey kong",
-      "email": "DKdonkey@banana.com",
-      "img": "https://img.olhardigital.com.br/uploads/acervo_imagens/2014/07/r16x9/20140710114451_1200_675_-_donkey_kong.jpg",
-      "wpp": "191980844",
-      "bio": "Want bana get banana",
-      "perhour": 64,
-      "disponibilityTo": 10,
-      "disponibilityFrom": 17,
-      "id": 201
-    }
-  ],
-  "Post": [
-    {
-      "id": 1,
-      "userPost": "Richard Burgesss",
-      "Title": "Potatoes",
-      "Content":"Lorem ipsum"
     }
   ]
 }

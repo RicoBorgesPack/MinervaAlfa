@@ -3,3 +3,8 @@ a{
     src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
     font: blue;
   }
+  .col1 {
+    display: grid;
+    width: 25%;
+    text-align: center; 
+  }

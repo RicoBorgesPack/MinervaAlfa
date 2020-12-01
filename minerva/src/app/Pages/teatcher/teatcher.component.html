@@ -18,19 +18,22 @@
     <input [(ngModel)]="teacher.wpp" mat-input type="tel" name="wpp" placeholder="wpp"  autocomplete="on">
   </div>
   <div>
-    <textarea [(ngModel)]="teacher.bio" name="bio" id="bio" placeholder="Write your bio"  required></textarea>
+    <textarea [(ngModel)]="teacher.Bio" name="bio" id="bio" placeholder="Write your bio"  required></textarea>
   </div>
   <div>
     <input [(ngModel)]="teacher.perhour" mat-input type="number" min="1" step="any"name="perhour" placeholder="perhour" autocomplete="on">
   </div>
   <div>
-    <input [(ngModel)]="teacher.disponibilityTo"mat-input type="number" min="1" max="24" step="any"name="To" placeholder="To" autocomplete="on">
+    <input [(ngModel)]="teacher.To"mat-input type="number" min="1" max="24" step="any"name="To" placeholder="To" autocomplete="on">
   </div>
   <div>
-    <input [(ngModel)]="teacher.disponibilityFrom"mat-input type="number" min="1" max="24" step="any"name="From" placeholder="From" autocomplete="on">
+    <input [(ngModel)]="teacher.From"mat-input type="number" min="1" max="24" step="any"name="From" placeholder="From" autocomplete="on">
   </div>
    <div>
-    <input [(ngModel)]="teacher.language" mat-input type="text" name="language" placeholder="Insert your language" autocomplete="off">
+    <input [(ngModel)]="teacher.Language" mat-input type="text" name="language" placeholder="Insert your language" autocomplete="off">
+    </div>
+    <div>
+      <textarea [(ngModel)]="teacher.Nationality" name="Nationality" id="Nationality" placeholder="Write your Nationality"  required></textarea>
     </div>
   <div class="buttons">
     <button mat-button (click)="onSubmit()">Submit</button>
